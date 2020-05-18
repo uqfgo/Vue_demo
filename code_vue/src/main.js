@@ -9,7 +9,7 @@ import './assets/css/global.css'
 import './plugins/element.js'
 // 导入icon图标
 import './assets/font_1822600_omucaroikvc/iconfont.css'
-// 导入 axios 
+// 导入 axios
 import axios from 'axios'
 // 配置请求的根路径
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'

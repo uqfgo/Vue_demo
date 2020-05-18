@@ -32,7 +32,7 @@ export default {
       // 登录表单的数据绑定对象
       loginForm: {
         username: 'admin',
-        password: '123456 '
+        password: '123456'
       },
       // 登录表单校验
       loginFormRules: {
@@ -57,11 +57,11 @@ export default {
     login () {
       this.$refs.loginFormRef.validate(async vaild => {
         // 当请求失败直接返回
-        if(!vaild) return
+        if (!vaild) return
         // 请求成功执行接下来代码
-        var {data:res} = await this.$http.post('login', this.loginForm)
+        var {data: res} = await this.$http.post('login', this.loginForm)
         // 当 res.meta.status 不等于200就是失败
-        if(res.meta.status !== 200) {
+        if (res.meta.status !== 200) {
           this.$message.error('登录失败,用户名或密码错误')
         } else {
           this.$message.success('登录成功')
