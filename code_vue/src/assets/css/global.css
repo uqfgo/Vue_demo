@@ -4,3 +4,13 @@ html, body, #app {
   margin: 0;
   padding: 0;
 }
+
+/* 面包屑 */
+.el-breadcrumb {
+  margin-bottom: 20px;
+}
+
+.el-pagination {
+  padding: 30px 20px;
+  background-color: #fff;
+}
