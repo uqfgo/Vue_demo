@@ -23,7 +23,8 @@ import {
   Switch,
   Tooltip,
   Pagination,
-  Dialog
+  Dialog,
+  MessageBox
 } from 'element-ui'
 
 Vue.use(Dialog)
@@ -51,3 +52,4 @@ Vue.use(BreadcrumbItem)
 Vue.use(Card)
 // 这个弹框提示必须使用原型链
 Vue.prototype.$message = Message
+Vue.prototype.$confirm = MessageBox.confirm
